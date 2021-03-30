@@ -8,5 +8,9 @@ export function createCourse(request: Request, response: Response) {
     duration: 10,
     educator: "Dani"
   });
+  CreateCoursesService.execute({
+    name: "React",
+    educator: "Diego"
+  });
   return response.send();
 }
